@@ -1,0 +1,144 @@
+.formChauf {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.formChauf__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.formChauf__img img {
+  max-width: 598px;
+  width: 100%;
+  height: 100%;
+}
+.formChauf__text-wrapper {
+  display: flex;
+  max-width: 598px;
+  width: 100%;
+  padding: 30px 70px 30px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #1A187D;
+}
+.formChauf__title {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+}
+.formChauf__text {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+}
+.formChauf__form {
+  width: 100%;
+}
+.formChauf__inputs {
+  display: flex;
+}
+.formChauf__input {
+  max-width: 248px;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  padding: 20px;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 100px;
+  border: 1px solid #FFF;
+  background-color: transparent;
+  outline: none;
+}
+.formChauf__form::placeholder {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 19.5px */
+}
+.formChauf__send-wrapper {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.formChauf__click {
+  max-width: 248px;
+  width: 100%;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 15.6px */
+}
+.formChauf__send {
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  background: #FFF;
+}
+.formChauf__send p {
+  color: #1C1C1C;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+@media (max-width: 1250px) {
+  .formChauf__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .formChauf__inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .formChauf__input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .formChauf__send-wrapper {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .formChauf__send {
+    max-width: 100%;
+    width: 100%;
+  }
+  .formChauf__click {
+    text-align: center;
+  }
+  .formChauf__text-wrapper {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .formChauf__title {
+    font-size: 32px;
+  }
+  .formChauf__text {
+    font-size: 14px;
+  }
+  .formChauf__img img {
+    height: 280px;
+  }
+}

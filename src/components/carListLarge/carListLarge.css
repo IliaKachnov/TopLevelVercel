@@ -1,0 +1,108 @@
+.carListLarge {
+  margin-top: 60px;
+}
+
+.carListLarge__crumb {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 75%; /* 9px */
+  text-transform: uppercase;
+}
+.carListLarge__crumb::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  background: var(--blue, #3936C8);
+}
+.carListLarge__title {
+  max-width: 598px;
+  width: 100%;
+  margin-top: 20px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+}
+.carListLarge__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.carCard__filters {
+  margin-top: 12px;
+  display: flex;
+}
+
+.carCard__filter {
+  width: fit-content;
+  display: flex;
+  padding: 4px 10px;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #7D7D7D;
+  opacity: 0.6;
+  color: var(--white, #FFF);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 14px */
+}
+.carCard__filter.blue {
+  width: fit-content;
+  display: flex;
+  padding: 4px 10px;
+  align-items: center;
+  border-radius: 100px;
+  background: #1A187D;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 14px */
+  border: none;
+  opacity: 1;
+}
+.card__swiper {
+  max-width: 598px;
+  width: 100%;
+}
+
+.carListLarge__more-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.carListLarge__more {
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--dark-blue, #1A187D);
+}
+.carListLarge__more p {
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 800px) {
+  .carListLarge__title {
+    font-size: 32px;
+  }
+}

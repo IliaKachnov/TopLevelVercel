@@ -1,0 +1,121 @@
+.aboutUs {
+  margin-top: 130px;
+}
+
+.aboutUs__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUs__crumb {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 75%; /* 9px */
+  text-transform: uppercase;
+}
+.aboutUs__crumb:before {
+  margin-right: 5px;
+  margin-bottom: 2px;
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #3936C8;
+}
+.aboutUs__title {
+  margin-top: 20px;
+  max-width: 496px;
+  width: 100%;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+}
+.aboutUs__text {
+  max-width: 496px;
+  width: 100%;
+  margin-top: 15px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+}
+.aboutUs__numbers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUs__amount {
+  color: #3936C8;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 52.8px */
+}
+.aboutUs__subtitle {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+}
+.aboutUs__logos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUs__logos img {
+  height: 70px;
+}
+
+.aboutUs__img img {
+  max-width: 700px;
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .aboutUs__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .aboutUs__text {
+    max-width: 100%;
+    width: 100%;
+  }
+  .aboutUs__section,
+  .aboutUs__numbers {
+    max-width: 700px;
+    width: 100%;
+  }
+  .aboutUs__logos {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 700px;
+    width: 100%;
+    overflow: auto;
+    gap: 30px;
+  }
+  .aboutUs__logos::-webkit-scrollbar {
+    color: #3936C8;
+  }
+}
+@media (max-width: 470px) {
+  .aboutUs {
+    margin-top: 60px;
+  }
+  .aboutUs__logos img {
+    height: 60px;
+  }
+  .aboutUs__title {
+    font-size: 32px;
+  }
+}

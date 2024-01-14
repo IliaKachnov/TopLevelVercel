@@ -1,0 +1,128 @@
+.stepsHome {
+  margin-top: 130px;
+}
+
+
+.stepsHome__crumb {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 75%; /* 9px */
+  text-transform: uppercase;
+}
+.stepsHome__crumb::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #3936C8;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.stepsHome__title {
+  margin-top: 20px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+}
+.stepsHome__steps {
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.stepsHome__step {
+  min-height: 236px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  border-radius: 16px;
+  border: 2px solid #1A187D;
+  max-width: 392px;
+  width: 100%;
+  height: 100%;
+}
+.stepsHome__step.blue {
+  background-color: #1A187D;
+}
+.stepsHome__step.blue .stepsHome__amount {
+  background-color: #FFF;
+  color: #1A187D;
+}
+.stepsHome__amount {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #1A187D;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+}
+.stepsHome__step-wrapper h3 {
+  height: 62px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 30.8px */
+}
+.stepsHome__step-wrapper p {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+}
+@media (max-width: 1030px) {
+  .stepsHome__steps {
+    flex-direction: column;
+  }
+  .stepsHome__amount {
+    flex-shrink: 0;
+  }
+  .stepsHome__step {
+    max-width: 100%;
+    width: 100%;
+    min-height: 144px;
+    display: flex;
+    flex-direction: row;
+  }
+  .stepsHome__step-wrapper {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stepsHome__step-wrapper h3 {
+    height: 26px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 670px) {
+  .stepsHome__step {
+    min-height: 174px;
+    padding: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .stepsHome__step {
+    min-height: 194px;
+  }
+}

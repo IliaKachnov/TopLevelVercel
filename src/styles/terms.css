@@ -1,0 +1,21 @@
+.terms {
+  margin-top: 20px;
+}
+
+.terms__crumb {
+  display: flex;
+  gap: 8px;
+}
+.terms__crumb span {
+  color: #969696;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 14px */
+}
+@media (max-width: 830px) {
+  .terms__crumb {
+    display: none;
+  }
+}

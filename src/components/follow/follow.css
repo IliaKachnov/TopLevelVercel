@@ -1,0 +1,125 @@
+.follow {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.follow__inner-wrapper h2 {
+  margin-top: 20px;
+  max-width: 598px;
+  width: 100%;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+}
+
+.follow__crumb p {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 75%; /* 9px */
+  text-transform: uppercase;
+
+}
+.follow__crumb p::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #3936C8;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.follow__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.follow__wrapper img {
+  width: 289px;
+  height: 289px;
+  border-radius: 20px;
+}
+.follow__block {
+  width: 289px;
+  display: flex;
+  height: 289px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #1A187D;
+}
+.follow__block p {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+}
+@media (max-width: 1250px) {
+  .follow__wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+  .intro__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 650px) {
+  .follow__wrapper img {
+    width: 200px;
+    height: 195px;
+  }
+  .follow__block {
+    width: 200px;
+    height: 195px;
+  }
+  .follow__block p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .intro__title {
+    font-size: 32px;
+  }
+  .intro__text-wrapper {
+    gap: 15px;
+    padding: 16px;
+  }
+}
+@media (max-width: 470px) {
+  .follow {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 460px) {
+  .follow__wrapper img {
+    width: 155px;
+    height: 150px;
+  }
+  .follow__block {
+    width: 155px;
+    height: 150px;
+  }
+  .follow__block p {
+    font-size: 20px;
+  }
+  .follow__inner-wrapper h2 {
+    font-size: 32px;
+  }
+  .follow__wrapper {
+    gap: 10px;
+  }
+}
+@media (max-width: 359px) {
+  .follow__wrapper {
+    justify-content: center;
+  }
+}
