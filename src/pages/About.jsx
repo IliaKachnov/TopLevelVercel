@@ -6,7 +6,7 @@ import Advantages from "../components/advantages/Advantages"
 import CarCard from "../components/carCard/CarCard";
 import Follow from "../components/follow/Follow";
 import FormRent from "../components/form/FormRent"
-import FormChauf from "../components/formChauf/formChauf";
+import FormChauf from "../components/formChauf/FormChauf";
 import Reviews from "../components/reviews/Reviews";
 
 import '../styles/about.css';
